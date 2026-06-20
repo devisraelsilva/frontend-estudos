@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Outras Formatações</title>
+  </head>
+  <body>
+    <h1>Outros tipos de formatação</h1>
+    <hr />
+
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>
+      No texto a seguir, não estamos utilizando
+      <mark style="background-color: coral">NENHUMA</mark> tag para destacar um
+      código:
+    </p>
+    <p>Ex.: <q>document.getElementById('teste')</q></p>
+    <p>
+      No exemplo abaixo, estamos utilizando a tag <mark>CODE</mark> para
+      destacar uma linha de código:
+    </p>
+    <p>
+      Ex.: <q><code>document.getElementById('teste')</code></q>
+    </p>
+    <p>
+      No exemplo a seguir, estamos utilizando a tag
+      <mark>CODE dentro da tag PRE</mark>, adota a pré-formatação das linhas de
+      código:
+    </p>
+
+    <pre>
+        <code>
+    meta = 20000
+    vendas = 34682
+
+    if vendas < meta:
+    print("Não ganha bônus")
+    elif vendas > (meta*2):
+    bonus = 0.07 * vendas
+    print("Ganhou {} de bônus".format(bonus))
+    else:
+    bonus = 0.03 * vendas
+    print("Ganhou {} de bônus".format(bonus))
+        </code>
+    </pre>
+    <hr />
+    <h2>Citações simples</h2>
+    <p>
+      Cria uma citação/destaque em algum lugar da frase, utilizando a tag Q onde
+      deseja citar:
+    </p>
+    <p>Como diria um amigo meu: <q>Vocês são tudo do futuro!</q>.</p>
+    <h2>Citações completas</h2>
+    <p>
+      Para gerar citação de uma frase em específica de um livro ou publicação,
+      trazendo também internamente, o link referência, no exemplo abaixo
+      utilizei a tag <mark>BLOCKQUOTE dentro da tag Q</mark>:
+    </p>
+    <q>
+      <p>Segundo Israel Silva, em uma postagem no Linkedin:</p>
+      <blockquote
+        cite="https://www.linkedin.com/feed/update/urn:li:activity:7466215349147942913/"
+      >
+        (Spoiler em breve. Enquanto isso, um pouco de Rock 🎸)
+      </blockquote>
+    </q>
+    <hr />
+    <h2>Abreviações</h2>
+    <p>
+      Cria uma espécie de pop-up com a palavra ou frase completa, ao manter o
+      cursor na palavra que estará sublinhada pontilhada. Utilizando a tag
+      <mark>ABBR</mark>:
+    </p>
+    <p>
+      Sou o <abbr title="Israel">Rael</abbr>, estou aprendendo sobre
+      <abbr title="HyperText Markup Language">HTML</abbr> e
+      <abbr title="Cascading Style Sheets">CSS</abbr>, com o
+      <abbr title="Professor">Prof.</abbr> Gustavo Guanabara.
+    </p>
+    <hr />
+    <h2>Texto invertido</h2>
+    <p>
+      Podemos também criar um texto que aparecerá ao usuário, como invertido,
+      utilizando a tag <mark>BDO</mark>:
+    </p>
+    <p><bdo dir="rtl">Estou aprendendo funcionalidades do HTML5.</bdo></p>
+    <hr />
+  </body>
+</html>

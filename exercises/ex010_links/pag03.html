@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Links Externos</title>
+  </head>
+  <body>
+    <h1>Links Externos</h1>
+    <h2>Terceira página</h2>
+    <p>
+      Tabalharemos com a
+      <em><mark>tag A</mark></em> (Anchor/Ancora), para anexarmos links de sites
+      que queremos redirecionar, exemplo abaixo:
+    </p>
+    <p>
+      "Em meus estudos de desenvolvimento WEB, estou
+      <a
+        href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"
+        target="_blank"
+        rel="external"
+        >assistindo as aulas</a
+      >
+      e
+      <a
+        href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf"
+        target="_blank"
+        rel="external"
+        >acompanhando os materiais PDF</a
+      >, disponibilizados pelo <abbr title="Professor">Prof.</abbr> Gustavo
+      Guanabara, da plataforma
+      <a href="https://www.cursoemvideo.com/" target="_blank" rel="external"
+        >Curso em Video</a
+      >."
+    </p>
+    <p>Abaixo analíse como está escrita a frase acima:</p>
+    <code>
+      <pre>
+        
+    "&lt;p&gt;Em meus estudos de desenvolvimento WEB, estou
+        &lt;a
+        href=&quot;https://www.youtube.com/watch?v=Ejkb_YpuHWs&amp;list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&quot;
+        target=&quot;_blank&quot;
+        rel=&quot;external&quot;
+        &gt;assistindo as aulas&lt;/a
+        &gt;
+        e
+        &lt;a
+        href=&quot;https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf&quot;
+        target=&quot;_blank&quot;
+        rel=&quot;external&quot;
+        &gt;acompanhando os materiais PDF&lt;/a
+        &gt;, disponibilizados pelo &lt;abbr title=&quot;Professor&quot;&gt;Prof.&lt;/abbr&gt; Gustavo
+        Guanabara, da plataforma
+        &lt;a href=&quot;https://www.cursoemvideo.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;
+        &gt;Curso em Video&lt;/a
+        &gt;.&lt;/p&gt;"
+        
+    </pre
+      >
+    </code>
+    <p>
+      Podemos Analisar os atributos da <em><mark>tag A</mark></em
+      >:
+    </p>
+    <p>
+      Target="" - setamos se queremos abrir o link na aba atual ou uma nova aba.
+      <br />
+      Rel="" - para referir se é um link para página externa(external), ou
+      nofollow.
+    </p>
+    <hr />
+    <p align="center">
+      <a href="pag02.html" target="_self" rel="prev">Links Internos</a>
+      <a href="index.html" rel="prev">Página Inicial</a>
+    </p>
+  </body>
+</html>
